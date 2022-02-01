@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.9" group="system" method="upgrade">
+	<name>PLG_SYSTEM_WORKINGDAYS</name>
+	<creationDate>01.02.2022</creationDate>
+	<author>Artem Vasilev - Webmasterskaya</author>
+	<copyright>Copyright (C) 2020 Webmasterskaya. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<authorEmail>dev@webmasterskaya.xyz</authorEmail>
+	<authorUrl>https://webmasterskaya.xyz</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_WORKINGDAYS_XML_DESCRIPTION</description>
+
+	<!-- Scripts to run on installation -->
+	<scriptfile>
+		script.php
+	</scriptfile>
+
+	<!-- Language files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_workingdays.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_workingdays.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_workingdays.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_workingdays.sys.ini</language>
+	</languages>
+
+	<!-- Plugin files -->
+	<files>
+		<filename plugin="workingdays">workingdays.php</filename>
+		<folder>language</folder>
+	</files>
+
+	<!-- Config parameter -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="pre_holiday_message"
+					type="text"
+					label="PLG_SYSTEM_WORKINGDAYS_PARAMS_PRE_HOLIDAY_LABEL"
+					description="PLG_SYSTEM_WORKINGDAYS_PARAMS_PRE_HOLIDAY_DESCRIPTION"
+					default="PLG_SYSTEM_WORKINGDAYS_PARAMS_PRE_HOLIDAY_MESSAGE"
+				/>
+				<field
+					name="not_working_day_message"
+					type="text"
+					label="PLG_SYSTEM_WORKINGDAYS_PARAMS_NOT_WORKING_DAY_LABEL"
+					description="PLG_SYSTEM_WORKINGDAYS_PARAMS_NOT_WORKING_DAY_DESCRIPTION"
+					default="PLG_SYSTEM_WORKINGDAYS_PARAMS_NOT_WORKING_DAY_MESSAGE"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
