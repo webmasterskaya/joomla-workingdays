@@ -1,11 +1,11 @@
 <?php
-/**
- * @package    workingdays
- *
- * @author     Артём <your@email.com>
- * @copyright  A copyright
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
- * @link       http://your.url.com
+/*
+ * @package   Joomla - Working days
+ * @version    __DEPLOY_VERSION__
+ * @author    Artem Vasilev - webmasterskaya.xyz
+ * @copyright  Copyright (c) 2018 - 2022 Webmasterskaya. All rights reserved.
+ * @license    GNU/GPL license: https://www.gnu.org/copyleft/gpl.html
+ * @link       https://webmasterskaya.xyz/
  */
 
 defined('_JEXEC') or die;
